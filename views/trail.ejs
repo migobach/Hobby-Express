@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% include ./partials/head %>
+    <!-- <% include ./partials/head %> -->
   </head>
   <body>
     <header>
-      <% include ./partials/header %>
+      <!-- <% include ./partials/header %> -->
     </header>
     <h1 class="center">Kodiak Island Trails</h1>
     <hr />
@@ -23,9 +23,9 @@
           <th>x</th>
         </thead>
         <tbody>
-          <% trail.forEach( function(movie) { %>
+          <% trail.forEach( function(trail) { %>
             <tr>
-              <td><% trail.title %></td>
+              <td><%= trail.title %></td>
             </tr>
           <% }); %>
         </tbody>
